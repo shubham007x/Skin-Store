@@ -1,0 +1,130 @@
+body{
+    width: 100%;
+    font-family:Lato-Regular,Helvetica,Arial, sans-serif;
+    color: #2e3337;
+}
+#parent{
+    text-align: center;
+    /* border: 1px solid blue; */
+    margin: 100px;  
+}
+#parent>h1:first-of-type{
+    background-color: #333333;
+    color: #ffff;
+}
+h1{
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#img-1 img{
+    width: 1400;
+    height: 534px;
+}
+#category img{
+    width: 199px;
+    height: 199px;
+}
+#prod-1{
+display: flex;
+gap:4%;
+}
+#prod-1 >div:first-child>img{
+    height:600px;
+    width:600px;
+}
+#pro,#skin{
+    display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: last baseline;
+    text-align: left;
+}
+#pro>div>h3,#skin>div>h3{
+font-size: 16px;
+font-weight: 100;
+}
+#pro>div>h3+p,#skin>div>h3+p{
+border: 1px solid red;
+width:70%;
+height: 37px;
+font-size: 14px;
+font-weight: 150;
+}
+#pro>div>h3+p+p,#skin>div>h3+p+p{
+    font-size: 14px;
+    font-weight: 150;
+    }
+#pro img{
+    width: 259px;
+    height: 259px;
+    margin-bottom: 50px;
+   
+}
+#pro button,#skin button{
+    width: 249px;
+    height: 42px;
+    color: #ffff;
+    background-color: rgb(51,51,51);
+}
+#skin{
+display: flex;
+justify-content: space-between;
+margin: 10px 10px 10px;
+}
+
+#skin img{
+    width: 336px;
+    height: 336px;
+}
+#skin>div>p+p{
+   
+   font-size: 16px;
+   font-weight: 100;
+}
+#top-brand{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+#top-brand img{
+    width: 423px;
+    height: 423px;
+
+    border-radius:50%;
+}
+#top-brand>div>p{
+    font-size: 14px;
+    font-weight: 100;
+}
+@media only screen and (max-width: 700px) {
+    #img-1 img{
+        width: 600px;
+        height: 400px;
+    }
+    #prod-1 >div:first-child>img{
+        height:300px;
+        width:300px;
+    }
+    #prod-1{
+        display: flex;
+        flex-direction: column;
+        gap:4%;
+        }
+        #pro,#skin{
+            display: flex;
+           flex-direction: column;
+           flex-wrap: nowrap;
+           align-items: last baseline;
+            text-align: left;
+        }
+        #top-brand{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap:10px;
+        }
+        #img-2 img{
+            width: 600px;
+            height: 237px;
+        }
+ 
+  }

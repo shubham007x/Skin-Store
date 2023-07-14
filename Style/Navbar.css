@@ -1,0 +1,139 @@
+
+#flex{
+    display: flex;
+    gap: 210px;
+    margin-left: 15px;
+    position:fixed;
+    background-color: #ffff;
+    width: 100%;
+}
+
+#flex>div>p{
+    margin-top: -35px;
+    position:fixed; 
+    background-color: #ffff;
+}
+nav{
+    position:fixed;
+    background-color: #ffff;
+}
+
+h1{
+    font-size: 50px;
+}
+ header{
+width: 100%;
+height: 75px;
+background-color: white;
+}
+.search-bar {
+    position: relative;
+   display: flex;
+   align-items: center;
+   padding: 5px;
+   width: 430px;
+   height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 40px;
+}
+.search-bar input {
+flex: 1;
+border: none;
+outline: none;
+padding: 5px;
+}
+body>div>header>div>nav li{
+margin-top: 30px;
+display: inline-block;
+list-style: none;
+padding: 0px 10px;
+font-size: 20px;
+}
+body>div>header{
+margin-bottom: 50px;
+}
+body>div>nav li{
+display: inline-block;
+list-style: none;
+padding: 0px 10px;
+margin-right: 10px;
+}
+body>div>nav ul{
+display: flex;
+padding: 0;
+ margin: 0;
+
+}
+hr:first-of-type {
+border-color: #000;
+opacity: 0.8;
+position: fixed;
+}
+hr:nth-of-type(2) {
+opacity: 0.2;
+
+}
+
+.search-bar {
+position: relative;
+}
+
+.search-bar input[type="text"] {
+padding-right: 30px; 
+}
+
+.search-bar::before {
+content: "";
+position: absolute;
+top: 50%;
+right: 10px;
+transform: translateY(-50%);
+width: 20px;
+height: 20px;
+background-image: url("searchicon.png"); 
+background-size: cover;
+}
+.account {
+display: flex;
+align-items: center;
+}
+
+.account-icon {
+width: 20px;
+height: 20px;
+margin-right: 5px;
+background-image: url("accounticon.png"); 
+background-size: cover;
+}
+.shop-icon{
+width: 20px;
+height: 20px;
+margin-right: 5px;
+background-image: url("shopicon.png"); 
+background-size: cover;
+}
+.account>span{
+margin-right: 60px;
+}
+.p{
+    color: #000; font-size: 12px; opacity: 2.9;
+ }
+ @media only screen and (max-width: 700px) {
+    .search-bar {
+    display: none;
+    }
+nav{
+    display: none;
+}
+#flex>div>h1{
+   font-size: medium;
+}
+#flex>div>p{
+display:none;
+
+ }
+ hr{
+    display: none;
+ }
+ }

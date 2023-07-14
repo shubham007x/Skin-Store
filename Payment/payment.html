@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="payment.css">
+    <script src="payment.js"></script>
+</head>
+<body>
+    
+    <div id="flex">
+        <div>
+            <h1>SkinStore</h1>
+            <p>part of the <span style="color: #000; font-size: 12px; opacity: 2.9;">LOOKFANTASTIC</span>  group</p>
+        </div>
+        <p>hiii</p>
+       </div>
+        <hr class="hr">
+        <div id="flex1">
+       <div>
+           <div id="container">
+            <h2>1.Shipping Address</h2>
+            <div id="flex2">
+                <div class="empty-box">
+                  <div class="ship-icon"></div>
+                       <span>Shipping</span>
+                    <!-- <p>Shipping</p> -->
+                  </div>
+                  <div class="empty-box">
+                    <div class="home-icon"></div>
+                       <span>Click & Collect</span>
+                   <!-- <p>Click & Collect</p> -->
+                  </div>
+              </div>
+              
+             <form>
+               <p>* Country/Region</p>
+               <select name="country" id="select">
+                <option value="USA">United States</option>
+                <option value="IND">India</option>
+                <option value="AF">Afghanistan</option>
+                <option value="UK">United Kingdom</option>
+                <option value="HK">Honk Kong</option>
+                <option value="JPN">Japan</option>
+                <option value="CN">Canada</option>
+                <option value="SP">Singapore</option>
+                <option value="CH">China</option>
+                <option value="KR">Korea</option>
+
+               </select>
+               <p>* Full Name</p>
+               <input type="text" id="fullname">
+               <p>Address Search</p>
+               <input type="text" placeholder="Start typing your address" id="address">
+               <p>Contact Number</p>
+               <input type="text" id="contact">
+             </form>
+           </div>
+           <div id="container">
+            <h2>2. Select Delivery Option</h2>
+            <p>Please enter your address so we can calculate your delivery options.</p>
+           </div>
+           <div id="container">
+            <h2>3. Select Payment Method</h2>
+            <p>Credit/Debit Card</p>
+            <img src="./logo.svg" alt="logo">
+            <img src="./logo1.svg" alt="logo">
+            <img src="./logo3.svg" alt="logo">
+            <img src="./logo4.svg" alt="logo">
+            <img src="./logo5.svg" alt="logo">
+            <img src="./logo6.svg" alt="logo">
+            <img src="./logo7.svg" alt="logo">
+            <form >
+                <p>* Card Number</p>
+                <input type="Number" id="number">
+                <p>* Name On Card</p>
+                <input type="text" id="name">
+                <p>* Expiry Date</p>
+                <div id="flex2">
+                    <select name="month" id="month" >
+                        <option value="Month">Month</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">12</option>
+                        <option value="12">13</option>
+                    </select>
+                    <select name="year" id="year" >
+                        <option value="Year">Year</option>
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="">25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                        <option value="">28</option>
+                        <option value="">29</option>
+                        <option value="">30</option>
+                        <option value="">31</option>
+                        <option value="">32</option>
+                        <option value="">33</option>
+                        <option value="">34</option>
+                        <option value="">35</option>
+                        <option value="">36</option>
+                        <option value="">37</option>
+                        <option value="">38</option>
+                        <option value="">39</option>
+                        <option value="">40</option>
+                    </select>
+                </div>
+                <p>* Security Code (CV2)</p>
+                <input type="number" id="cv">
+                
+            </form> 
+           </div>
+           <div class="btn">
+            <button  type="button" >SUBMIT MY ORDER</button>
+           </div>
+           <p>By placing this order, you are confirming that you agree to our Terms and Conditions and Privacy Policy.</p>
+       </div>
+       <div class="right-column" >
+        <table class="table">
+            <tr>
+              <td>Order Summary</td>
+              <td></td>
+            </tr>
+             <tr>
+                <td colspan="2"><hr></td>
+             </tr>
+            <tr>
+              <td>Delivery</td>
+              <td>Calculated at next step</td>
+           </tr>
+           <tr>
+            <td colspan="2"><hr></td>
+           </tr>
+            <tr>
+              <td>Tax Breakdown <select class="no-border"></select> </td>
+            </tr>
+            <tr>
+              <td colspan="2"><hr></td>
+            </tr>
+            <tr>
+              <td>Total to pay</td>
+              <td id="finalcost"> </td>
+            </tr>
+           </table>
+       </div>
+    </div>
+    </div>
+</body>
+<script>
+   
+</script>
+
+</html>

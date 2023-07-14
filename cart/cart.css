@@ -1,0 +1,83 @@
+h1{
+    text-align: center;
+}
+#cart{
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    gap: 35px;
+    width: 92%;
+    text-align: center;
+    margin-left: 8%;
+}
+
+
+#cart>div{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    
+}
+#cart>div>img{
+    width: 100%;
+    
+}
+#cart>div>button{
+    outline: none;
+    border: none;
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+    
+    
+}
+#payment{
+    width: 50%;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-top: 5px;
+}
+#payment #couponcode{
+    width: 200px;
+    height: 35px;
+    font-size: 14px;
+}
+#payment #addcoupon{
+    outline: none;
+    border: none;
+    background-color: #333333;
+    color: white;
+    padding: 7px; 
+    font-size: 17px;
+}
+#payment #buy{
+    outline: none;
+    border: none;
+    background-color: #333333;
+    color: white;
+    padding: 15px; 
+    font-size: 25px;
+    
+
+}
+
+#pay{
+    margin-bottom: 200px;
+}
+
+@media only screen and (max-width: 900px) {
+    /* Medium Screen  */
+    
+    #cart{
+      grid-template-columns: 40% 40%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    /* Small Screen  */
+    
+    
+  #cart{
+      grid-template-columns: 80% ;
+    }
+    
+  }
